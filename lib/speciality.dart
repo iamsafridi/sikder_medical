@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class OurServices extends StatelessWidget {
-  const OurServices({super.key, required this.child});
+class OurSpeciality extends StatelessWidget {
+  const OurSpeciality({super.key, required this.child});
 
   final String child;
 

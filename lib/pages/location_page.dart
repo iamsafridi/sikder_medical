@@ -25,7 +25,7 @@ class _MapScreenState extends State<MapScreen> {
       body: Stack(
         children: [
           Container(
-            color: Colors.blue[50],
+            color: Color.fromARGB(50, 208, 226, 240),
             child: Padding(
               padding: const EdgeInsets.only(bottom: 300),
               child: GoogleMap(

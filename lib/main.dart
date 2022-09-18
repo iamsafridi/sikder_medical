@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:medical/pages/features_page.dart';
 import 'package:medical/pages/home_page.dart';
 import 'package:medical/pages/location_page.dart';
 import 'package:medical/pages/servies_page.dart';
+import 'package:medical/pages/speciality_page.dart';
 import 'package:medical/pages/starter_page.dart';
 
 void main() {
@@ -13,6 +16,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations(
+        [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
     return MaterialApp(
       themeMode: ThemeMode.light,
       theme: ThemeData(
@@ -23,11 +28,13 @@ class MyApp extends StatelessWidget {
       darkTheme: ThemeData(brightness: Brightness.light),
       initialRoute: "/main",
       routes: {
-        "/": (context) => StarterPage(),
+        // "/": (context) => StarterPage(),
         "/home": (context) => HomePages(),
         "/main": (context) => StarterPage(),
         "/map": (context) => MapScreen(),
         "/service": (context) => Services(),
+        "/speciality": (context) => Speciality(),
+        "/features": (context) => SpecialFeatures(),
       },
     );
   }

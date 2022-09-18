@@ -27,12 +27,28 @@ class Services extends StatelessWidget {
         appBar: AppBar(
           title: Text('Our Services'),
         ),
-        body: ListView.builder(
-            itemCount: _services.length,
-            itemBuilder: (context, index) {
-              return OurServices(
-                child: _services[index],
-              );
-            }));
+        body: Stack(
+          children: [
+            Container(
+              child: Image.asset('assets/images/service.jpeg'),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 155),
+              child: Container(
+                color: Color.fromARGB(50, 208, 226, 240),
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 15.0),
+                  child: ListView.builder(
+                      itemCount: _services.length,
+                      itemBuilder: (context, index) {
+                        return OurServices(
+                          child: _services[index],
+                        );
+                      }),
+                ),
+              ),
+            ),
+          ],
+        ));
   }
 }

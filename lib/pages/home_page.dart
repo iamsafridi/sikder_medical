@@ -110,7 +110,10 @@ class HomePages extends StatelessWidget {
                                   ),
                                   SizedBox(height: 35),
                                   IconButton(
-                                    onPressed: () {},
+                                    onPressed: () {
+                                      Navigator.pushNamed(
+                                          context, '/speciality');
+                                    },
                                     icon: Image.asset(
                                         'assets/images/medical-report.png'),
                                     iconSize: 45,
@@ -164,7 +167,9 @@ class HomePages extends StatelessWidget {
                                   ),
                                   SizedBox(height: 35),
                                   IconButton(
-                                    onPressed: () {},
+                                    onPressed: () {
+                                      Navigator.pushNamed(context, "/features");
+                                    },
                                     icon: Image.asset(
                                         'assets/images/vaccine.png'),
                                     iconSize: 45,
