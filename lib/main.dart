@@ -3,6 +3,8 @@ import 'package:flutter/services.dart';
 import 'package:medical/pages/features_page.dart';
 import 'package:medical/pages/home_page.dart';
 import 'package:medical/pages/location_page.dart';
+import 'package:medical/pages/pathoLab_page.dart';
+import 'package:medical/pages/radiology_page.dart';
 import 'package:medical/pages/servies_page.dart';
 import 'package:medical/pages/speciality_page.dart';
 import 'package:medical/pages/starter_page.dart';
@@ -34,7 +36,9 @@ class MyApp extends StatelessWidget {
         "/map": (context) => MapScreen(),
         "/service": (context) => Services(),
         "/speciality": (context) => Speciality(),
-        "/features": (context) => SpecialFeatures(),
+        "/features": (context) => Features(),
+        "/pathlab": (context) => PathoLab(),
+        "/radiology": (context) => Radiology(),
       },
     );
   }

@@ -66,7 +66,9 @@ class HomePages extends StatelessWidget {
                                   ),
                                   SizedBox(height: 35),
                                   IconButton(
-                                    onPressed: () {},
+                                    onPressed: () {
+                                      Navigator.pushNamed(context, '/pathlab');
+                                    },
                                     icon: Image.asset(
                                         'assets/images/blood-test.png'),
                                     iconSize: 45,
@@ -124,7 +126,10 @@ class HomePages extends StatelessWidget {
                                   ),
                                   SizedBox(height: 35),
                                   IconButton(
-                                    onPressed: () {},
+                                    onPressed: () {
+                                      Navigator.pushNamed(
+                                          context, '/radiology');
+                                    },
                                     icon: Image.asset(
                                         'assets/images/ct-scan.png'),
                                     iconSize: 45,
