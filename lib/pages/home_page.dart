@@ -55,7 +55,9 @@ class HomePages extends StatelessWidget {
                                   ),
                                   SizedBox(height: 35),
                                   IconButton(
-                                    onPressed: () {},
+                                    onPressed: () {
+                                      Navigator.pushNamed(context, '/package');
+                                    },
                                     icon: Image.asset(
                                         'assets/images/package.png'),
                                     iconSize: 45,

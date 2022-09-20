@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:medical/pages/features_page.dart';
 import 'package:medical/pages/home_page.dart';
 import 'package:medical/pages/location_page.dart';
+import 'package:medical/pages/packages_page.dart';
 import 'package:medical/pages/pathoLab_page.dart';
 import 'package:medical/pages/radiology_page.dart';
 import 'package:medical/pages/servies_page.dart';
@@ -39,6 +40,7 @@ class MyApp extends StatelessWidget {
         "/features": (context) => Features(),
         "/pathlab": (context) => PathoLab(),
         "/radiology": (context) => Radiology(),
+        "/package": (context) => HealthPackage(),
       },
     );
   }

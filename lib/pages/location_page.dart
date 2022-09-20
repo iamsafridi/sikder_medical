@@ -13,7 +13,7 @@ class MapScreen extends StatefulWidget {
 class _MapScreenState extends State<MapScreen> {
   late GoogleMapController mapController;
 
-  final LatLng _center = const LatLng(23.791550721631562, 90.42012059873181);
+  final LatLng _center = const LatLng(23.791442086012108, 90.42024024265433);
 
   void _onMapCreated(GoogleMapController controller) {
     mapController = controller;
@@ -89,7 +89,8 @@ class _MapScreenState extends State<MapScreen> {
                       // ignore: deprecated_member_use
                       onTap: () =>
                           // ignore: deprecated_member_use
-                          launch('https://www.facebook.com/zhsikderwmch'),
+                          launch('https://www.facebook.com/zhsikderwmch',
+                              forceWebView: true, enableJavaScript: true),
                     )
                   ]),
                   SizedBox(
@@ -124,7 +125,8 @@ class _MapScreenState extends State<MapScreen> {
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 18.0)),
                       // ignore: deprecated_member_use
-                      onTap: () => launch('https://www.sikderhospital.net'),
+                      onTap: () => launch('https://www.sikderhospital.net',
+                          forceWebView: true, enableJavaScript: true),
                     )
                   ]),
                 ],
