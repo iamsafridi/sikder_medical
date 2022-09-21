@@ -22,120 +22,117 @@ class _MapScreenState extends State<MapScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
+      appBar: AppBar(
+        title: Text('Loaction'),
+      ),
+      body: ListView(
         children: [
           Container(
-            height: Adaptive.h(100), // or 12.5.h
+            height: Adaptive.h(40), // or 12.5.h
             width: 100.w,
-            color: Color.fromARGB(50, 208, 226, 240),
-            child: Padding(
-              padding: const EdgeInsets.only(bottom: 300),
-              child: GoogleMap(
-                onMapCreated: _onMapCreated,
-                initialCameraPosition: CameraPosition(
-                  target: _center,
-                  zoom: 17.0,
-                ),
+            child: GoogleMap(
+              onMapCreated: _onMapCreated,
+              initialCameraPosition: CameraPosition(
+                target: _center,
+                zoom: 17.0,
               ),
             ),
           ),
           // ListView(children: [
-          Positioned(
-            top: 400,
-            child: Container(
-                padding: EdgeInsets.all(12),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    const Center(
-                      child: Text(
-                          'Zainul Haque Sikder Medical Collage & Hospital \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(PVT) Ltd',
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 18.0)),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    const Center(
-                      child: Text('Gulshan Branch',
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 18.0)),
-                    ),
-                    SizedBox(
-                      height: 5, // <-- SEE HERE
-                    ),
-                    const Center(
-                      child: Text('House:05, Road:104, Gulshan-2,Dhaka 1212',
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 18.0)),
-                    ),
-                    SizedBox(
-                      height: 25, // <-- SEE HERE
-                    ),
-                    const Text('Mobile: 01313 752 222',
+          Container(
+              // color: Color.fromARGB(50, 208, 226, 240),
+              padding: EdgeInsets.all(12),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const Center(
+                    child: Text(
+                        'Zainul Haque Sikder Medical Collage & Hospital \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(PVT) Ltd',
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 18.0)),
-                    const Text('Hotline: 09609004444',
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  const Center(
+                    child: Text('Gulshan Branch',
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 18.0)),
-                    SizedBox(
-                      height: 10, // <-- SEE HERE
+                  ),
+                  SizedBox(
+                    height: 5, // <-- SEE HERE
+                  ),
+                  const Center(
+                    child: Text('House:05, Road:104, Gulshan-2,Dhaka 1212',
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 18.0)),
+                  ),
+                  SizedBox(
+                    height: 25, // <-- SEE HERE
+                  ),
+                  const Text('Mobile: 01313 752 222',
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold, fontSize: 18.0)),
+                  const Text('Hotline: 09609004444',
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold, fontSize: 18.0)),
+                  SizedBox(
+                    height: 10, // <-- SEE HERE
+                  ),
+                  Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+                    Icon(
+                      Icons.facebook,
+                      color: Colors.blue[500],
                     ),
-                    Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-                      Icon(
-                        Icons.facebook,
-                        color: Colors.blue[500],
-                      ),
-                      InkWell(
-                        child: Text('Facebook',
-                            style: TextStyle(
-                                fontWeight: FontWeight.bold, fontSize: 18.0)),
-                        // ignore: deprecated_member_use
-                        onTap: () =>
-                            // ignore: deprecated_member_use
-                            launch('https://www.facebook.com/zhsikderwmch',
-                                forceWebView: true, enableJavaScript: true),
-                      )
-                    ]),
-                    SizedBox(
-                      height: 5,
+                    InkWell(
+                      child: Text('Facebook',
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 18.0)),
+                      // ignore: deprecated_member_use
+                      onTap: () =>
+                          // ignore: deprecated_member_use
+                          launch('https://www.facebook.com/zhsikderwmch',
+                              forceWebView: true, enableJavaScript: true),
+                    )
+                  ]),
+                  SizedBox(
+                    height: 5,
+                  ),
+                  Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+                    Icon(
+                      Icons.email,
+                      color: Colors.orange[500],
                     ),
-                    Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-                      Icon(
-                        Icons.email,
-                        color: Colors.orange[500],
-                      ),
-                      InkWell(
-                        child: Text('info@sikderhospital.net',
-                            style: TextStyle(
-                                fontWeight: FontWeight.bold, fontSize: 18.0)),
-                        // ignore: deprecated_member_use
-                        onTap: () => launch('mailto:info@sikderhospital.net'),
-                      )
-                      // const Text('info@sikderhospital.net',
-                      //     style: TextStyle(
-                      //         fontWeight: FontWeight.bold, fontSize: 18.0)),
-                    ]),
-                    SizedBox(
-                      height: 5,
+                    InkWell(
+                      child: Text('info@sikderhospital.net',
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 18.0)),
+                      // ignore: deprecated_member_use
+                      onTap: () => launch('mailto:info@sikderhospital.net'),
+                    )
+                    // const Text('info@sikderhospital.net',
+                    //     style: TextStyle(
+                    //         fontWeight: FontWeight.bold, fontSize: 18.0)),
+                  ]),
+                  SizedBox(
+                    height: 5,
+                  ),
+                  Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+                    Icon(
+                      Icons.web,
+                      color: Colors.red[500],
                     ),
-                    Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-                      Icon(
-                        Icons.web,
-                        color: Colors.red[500],
-                      ),
-                      InkWell(
-                        child: Text('www.sikderhospital.net',
-                            style: TextStyle(
-                                fontWeight: FontWeight.bold, fontSize: 18.0)),
-                        // ignore: deprecated_member_use
-                        onTap: () => launch('https://www.sikderhospital.net',
-                            forceWebView: true, enableJavaScript: true),
-                      )
-                    ]),
-                  ],
-                )),
-          ),
+                    InkWell(
+                      child: Text('www.sikderhospital.net',
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 18.0)),
+                      // ignore: deprecated_member_use
+                      onTap: () => launch('https://www.sikderhospital.net',
+                          forceWebView: true, enableJavaScript: true),
+                    )
+                  ]),
+                ],
+              )),
           // ])
         ],
       ),
