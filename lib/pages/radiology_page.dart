@@ -34,8 +34,76 @@ class Radiology extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(left: 18, top: 20),
                     child: Text(
-                      'The Radiology & imaging Department at Zainul Haque Sikder Women Medical is one of the best equipped radiology department in the country with a range of state-of-the-art equipment supporting a high quality service deliverd by specialized clinical team and support team.',
+                      'The Radiology & imaging Department at Zainul Haque Sikder Women\'s Medical College & Hospital is one of the best equipped radiology department in the country with a range of state-of-the-art equipment supporting a high quality service deliverd by specialized clinical team and support team.',
                       style: TextStyle(fontSize: 15, height: 2),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 18, top: 20),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.check_circle,
+                          color: Colors.blue[900],
+                        ),
+                        Text(
+                          'MRI',
+                          style: TextStyle(
+                            fontSize: 15,
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 18, top: 20),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.check_circle,
+                          color: Colors.blue[900],
+                        ),
+                        Text(
+                          'CT-SCAN',
+                          style: TextStyle(
+                            fontSize: 15,
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 18, top: 20),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.check_circle,
+                          color: Colors.blue[900],
+                        ),
+                        Text(
+                          'X-RAY',
+                          style: TextStyle(
+                            fontSize: 15,
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 18, top: 20),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.check_circle,
+                          color: Colors.blue[900],
+                        ),
+                        Text(
+                          'USG',
+                          style: TextStyle(
+                            fontSize: 15,
+                          ),
+                        )
+                      ],
                     ),
                   ),
                 ],
