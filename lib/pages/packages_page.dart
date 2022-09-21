@@ -103,7 +103,7 @@ class _HealthPackageState extends State<HealthPackage> {
                       title: Text('General Health Check-up Package-1'),
                       subtitle: Text('click for details'),
                       trailing: Text(
-                        "৳ ${'2160'}",
+                        "BDT ${'2160/='}",
                         textScaleFactor: 1.3,
                         style: TextStyle(
                             color: Colors.deepPurple,
@@ -201,7 +201,7 @@ class _HealthPackageState extends State<HealthPackage> {
                       title: Text('General Health Check-up Package-2'),
                       subtitle: Text('click for details'),
                       trailing: Text(
-                        "৳ ${'3900'}",
+                        "BDT ${'3900/='}",
                         textScaleFactor: 1.3,
                         style: TextStyle(
                             color: Colors.deepPurple,
@@ -315,7 +315,7 @@ class _HealthPackageState extends State<HealthPackage> {
                       title: Text('General Health Check-up Package-3'),
                       subtitle: Text('click for details'),
                       trailing: Text(
-                        "৳ ${'6600'}",
+                        "BDT ${'6600/='}",
                         textScaleFactor: 1.3,
                         style: TextStyle(
                             color: Colors.deepPurple,
@@ -421,7 +421,7 @@ class _HealthPackageState extends State<HealthPackage> {
                       title: Text('General Health Check-up Package-4'),
                       subtitle: Text('click for details'),
                       trailing: Text(
-                        "৳ ${'7200'}",
+                        "BDT ${'7200/='}",
                         textScaleFactor: 1.3,
                         style: TextStyle(
                             color: Colors.deepPurple,
@@ -511,7 +511,7 @@ class _HealthPackageState extends State<HealthPackage> {
                       title: Text('Pregnancy Profile Package'),
                       subtitle: Text('click for details'),
                       trailing: Text(
-                        "৳ ${'3000'}",
+                        "BDT ${'3000/='}",
                         textScaleFactor: 1.3,
                         style: TextStyle(
                             color: Colors.deepPurple,
@@ -593,7 +593,7 @@ class _HealthPackageState extends State<HealthPackage> {
                       title: Text('Thyroid Profile Package'),
                       subtitle: Text('click for details'),
                       trailing: Text(
-                        "৳ ${'3300'}",
+                        "BDT ${'3300/='}",
                         textScaleFactor: 1.3,
                         style: TextStyle(
                             color: Colors.deepPurple,
@@ -695,7 +695,7 @@ class _HealthPackageState extends State<HealthPackage> {
                       title: Text('Cardiac Profile Package'),
                       subtitle: Text('click for details'),
                       trailing: Text(
-                        "৳ ${'4000'}",
+                        "BDT ${'4000/='}",
                         textScaleFactor: 1.3,
                         style: TextStyle(
                             color: Colors.deepPurple,
@@ -797,7 +797,7 @@ class _HealthPackageState extends State<HealthPackage> {
                       title: Text('Diabetic Profile Package'),
                       subtitle: Text('click for details'),
                       trailing: Text(
-                        "৳ ${'5640'}",
+                        "BDT ${'5640/='}",
                         textScaleFactor: 1.3,
                         style: TextStyle(
                             color: Colors.deepPurple,
