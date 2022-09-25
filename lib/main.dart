@@ -1,10 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:medical/pages/doctor_pages/cardiology.dart';
+import 'package:medical/pages/doctor_pages/cardiology_surgon.dart';
+import 'package:medical/pages/doctor_pages/urology.dart';
+import 'package:medical/pages/doctor_pages/general_surgery.dart';
+import 'package:medical/pages/doctor_pages/neurology.dart';
+import 'package:medical/pages/doctor_pages/orthopedic.dart';
+import 'package:medical/pages/find_doctor_page.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 import 'package:flutter/services.dart';
 import 'package:medical/pages/features_page.dart';
 import 'package:medical/pages/home_page.dart';
 import 'package:medical/pages/location_page.dart';
-import 'package:medical/pages/onlineAppointment_page.dart';
+// import 'package:medical/pages/onlineAppointment_page.dart';
 import 'package:medical/pages/packages_page.dart';
 import 'package:medical/pages/pathoLab_page.dart';
 import 'package:medical/pages/radiology_page.dart';
@@ -45,6 +52,13 @@ class MyApp extends StatelessWidget {
           "/pathlab": (context) => PathoLab(),
           "/radiology": (context) => Radiology(),
           "/package": (context) => HealthPackage(),
+          "/doctor": (context) => FindDoctor(),
+          "/cardiology": (context) => Cardiology(),
+          "/cardiology_surgon": (context) => CardiologySurgon(),
+          "/general_surgery": (context) => GeneralSurgery(),
+          "/orthopedic": (context) => Orthopedic(),
+          "/neurology": (context) => Neurology(),
+          "/eurology": (context) => Urology(),
         },
       );
     });

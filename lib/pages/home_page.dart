@@ -31,7 +31,9 @@ class _HomePageState extends State<HomePage> {
                   Column(
                     children: [
                       IconButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pushNamed(context, "/doctor");
+                        },
                         icon: Image.asset('assets/images/stethoscope.png'),
                         iconSize: 45,
                       ),
