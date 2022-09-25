@@ -84,7 +84,7 @@ class _CardiologySurgonState extends State<CardiologySurgon> {
                                 style: TextStyle(fontWeight: FontWeight.bold),
                               ),
                               subtitle: Text(
-                                  'MBBS (DMC), BCS (health)\nClinical and Interventional Cardiologist\nHead of Department (Cardiology)\nNational Institute of Neurosciences and Hospital'),
+                                  'MBBS, BCS (health)\nMRCPS(Surgery),Edinburgh, UK\nMS(Cardio Vascular & Therapy Surgery) BSSMU\nSpecialist Cardio Vascular & General Surgery, NIECVD'),
                             ),
                           ),
                         ),
@@ -101,11 +101,11 @@ class _CardiologySurgonState extends State<CardiologySurgon> {
                                 width: 55,
                               ),
                               title: Text(
-                                'DR.AMANULLAH BIN SIDDIQ',
+                                'DR. MD. REZAUL KARIM',
                                 style: TextStyle(fontWeight: FontWeight.bold),
                               ),
                               subtitle: Text(
-                                  'MBBS (DMC), MD (Cardiology)\nClinical and Interventional Cardiologist\nHead of Department (Cardiology)\nNational Institute of Neurosciences and Hospital'),
+                                  'MBBS (DMC), BCS (Health)\nMS(Cardio Vascular & Therpay Surgery),\nFCPS(America)'),
                             ),
                           ),
                         ),
