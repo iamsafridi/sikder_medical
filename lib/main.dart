@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:medical/pages/doctor_pages/cardiology.dart';
 import 'package:medical/pages/doctor_pages/cardiology_surgon.dart';
+import 'package:medical/pages/doctor_pages/hematology.dart';
+import 'package:medical/pages/doctor_pages/medicine.dart';
 import 'package:medical/pages/doctor_pages/urology.dart';
 import 'package:medical/pages/doctor_pages/general_surgery.dart';
 import 'package:medical/pages/doctor_pages/neurology.dart';
@@ -59,6 +61,8 @@ class MyApp extends StatelessWidget {
           "/orthopedic": (context) => Orthopedic(),
           "/neurology": (context) => Neurology(),
           "/eurology": (context) => Urology(),
+          "/medicine": (context) => Medicine(),
+          "/hematology": (context) => Hematology()
         },
       );
     });
