@@ -22,65 +22,138 @@ class _CardiologyState extends State<Cardiology> {
                   return Container(
                     child: Column(
                       children: [
-                        Card(
-                          // elevation: ,
-                          shape: Border(bottom: BorderSide(color: Colors.blue)),
-                          child: Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: ListTile(
-                              leading: Image.asset(
-                                'assets/images/dr/drmahboob.png',
-                                fit: BoxFit.cover,
-                                height: 100,
-                                width: 55,
+                        Container(
+                          // height: 180,
+                          child: Card(
+                            // elevation: ,
+                            shape:
+                                Border(bottom: BorderSide(color: Colors.blue)),
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: ListTile(
+                                leading: CircleAvatar(
+                                    radius: (30),
+                                    backgroundColor: Colors.white,
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.circular(50),
+                                      child: Image.asset(
+                                        "assets/images/dr/drmahboob.png",
+                                        fit: BoxFit.cover,
+                                        // width: 90,
+                                      ),
+                                    )),
+                                title: Text(
+                                  'PROFESSOR DR.MAHBOOB ALI',
+                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                ),
+                                subtitle: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                        'MBBS, MD\nFCPS, FSCAI\nTrends in Interventional Cardiology\nSenior Consultant (Cardiology Specialist)'),
+                                    Container(
+                                      width: 260,
+                                      child: ElevatedButton(
+                                        onPressed: () {},
+                                        child: Text(
+                                          'Appointment',
+                                          textAlign: TextAlign.end,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ),
-                              title: Text(
-                                'PROFESSOR DR.MAHBOOB ALI',
-                                style: TextStyle(fontWeight: FontWeight.bold),
-                              ),
-                              subtitle: Text(
-                                  'MBBS, MD\nFCPS, FSCAI\nTrends in Interventional Cardiology\nSenior Consultant (Cardiology Specialist)'),
                             ),
                           ),
                         ),
-                        Card(
-                          // elevation: ,
-                          shape: Border(bottom: BorderSide(color: Colors.blue)),
-                          child: Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: ListTile(
-                              leading: Image.asset(
-                                'assets/images/dr/draman.png',
-                                fit: BoxFit.cover,
-                                height: 100,
-                                width: 55,
+                        Container(
+                          // height: 180,
+                          child: Card(
+                            // elevation: ,
+                            shape:
+                                Border(bottom: BorderSide(color: Colors.blue)),
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: ListTile(
+                                leading: CircleAvatar(
+                                    radius: (30),
+                                    backgroundColor: Colors.white,
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.circular(50),
+                                      child: Image.asset(
+                                        "assets/images/dr/draman.png",
+                                        fit: BoxFit.cover,
+                                        // width: 90,
+                                      ),
+                                    )),
+                                title: Text(
+                                  'DR.AMANULLAH BIN SIDDIQ',
+                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                ),
+                                subtitle: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                        'MBBS (DMC), MD (Cardiology)\nClinical and Interventional Cardiologist\nHead of Department (Cardiology)\nNational Institute of Neurosciences & Hospital'),
+                                    Container(
+                                      width: 260,
+                                      child: ElevatedButton(
+                                        onPressed: () {},
+                                        child: Text(
+                                          'Appointment',
+                                          textAlign: TextAlign.end,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ),
-                              title: Text(
-                                'DR.AMANULLAH BIN SIDDIQ',
-                                style: TextStyle(fontWeight: FontWeight.bold),
-                              ),
-                              subtitle: Text(
-                                  'MBBS (DMC), MD (Cardiology)\nClinical and Interventional Cardiologist\nHead of Department (Cardiology)\nNational Institute of Neurosciences and Hospital'),
                             ),
                           ),
                         ),
-                        Card(
-                          // elevation: ,
-                          shape: Border(bottom: BorderSide(color: Colors.blue)),
-                          child: Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: ListTile(
-                              leading: Image.asset(
-                                'assets/images/dr/dranyet.png',
-                                height: 100,
-                                width: 55,
+                        Container(
+                          // height: 180,
+                          child: Card(
+                            // elevation: ,
+                            shape:
+                                Border(bottom: BorderSide(color: Colors.blue)),
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: ListTile(
+                                leading: CircleAvatar(
+                                    radius: (30),
+                                    backgroundColor: Colors.white,
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.circular(50),
+                                      child: Image.asset(
+                                        "assets/images/dr/dranyet.png",
+                                        fit: BoxFit.cover,
+                                        // width: 90,
+                                      ),
+                                    )),
+                                title: Text(
+                                  'DR. A.H.M ENAYETUR RASHUL',
+                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                ),
+                                subtitle: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                        'MBBS (DMC), MD (Cardiology)\nNational Institute of Cardiovascular Disease\nConsultant (Cardiology)'),
+                                    Container(
+                                      width: 260,
+                                      child: ElevatedButton(
+                                        onPressed: () {},
+                                        child: Text(
+                                          'Appointment',
+                                          textAlign: TextAlign.end,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ),
-                              title: Text(
-                                'DR. A.H.M ENAYETUR RASHUL',
-                                style: TextStyle(fontWeight: FontWeight.bold),
-                              ),
-                              subtitle: Text(
-                                  'MBBS (DMC), MD (Cardiology)\nNational Institute of Cardiovascular Disease\nConsultant (Cardiology)'),
                             ),
                           ),
                         ),

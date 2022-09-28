@@ -49,7 +49,8 @@ class _MapScreenState extends State<MapScreen> {
                   children: [
                     const Center(
                       child: Text(
-                          'Zainul Haque Sikder Medical Collage & Hospital \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(PVT) Ltd',
+                          'Zainul Haque Sikder Medical Collage & Hospital (PVT) Ltd',
+                          textAlign: TextAlign.center,
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 18.0)),
                     ),

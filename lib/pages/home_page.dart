@@ -54,6 +54,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                       Text(
                         "Call for Appointment",
+                        textAlign: TextAlign.center,
                         style: TextStyle(fontSize: 12),
                       ),
                     ],
@@ -177,20 +178,23 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ],
                   ),
-                  Column(
-                    children: [
-                      IconButton(
-                        onPressed: () {
-                          Navigator.pushNamed(context, '/radiology');
-                        },
-                        icon: Image.asset('assets/images/ct-scan.png'),
-                        iconSize: 45,
-                      ),
-                      Text(
-                        "Radiology & Imaging",
-                        style: TextStyle(fontSize: 12),
-                      ),
-                    ],
+                  Center(
+                    child: Column(
+                      children: [
+                        IconButton(
+                          onPressed: () {
+                            Navigator.pushNamed(context, '/radiology');
+                          },
+                          icon: Image.asset('assets/images/ct-scan.png'),
+                          iconSize: 45,
+                        ),
+                        Text(
+                          "Radiology & Imaging",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(fontSize: 12),
+                        ),
+                      ],
+                    ),
                   ),
                   Column(
                     children: [

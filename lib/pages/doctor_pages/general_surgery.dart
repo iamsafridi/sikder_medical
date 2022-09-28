@@ -28,18 +28,38 @@ class _GeneralSurgeryState extends State<GeneralSurgery> {
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: ListTile(
-                              leading: Image.asset(
-                                'assets/images/dr/drnasir.png',
-                                fit: BoxFit.cover,
-                                height: 100,
-                                width: 55,
-                              ),
+                              leading: CircleAvatar(
+                                  radius: (30),
+                                  backgroundColor: Colors.white,
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(50),
+                                    child: Image.asset(
+                                      "assets/images/dr/drnasir.png",
+                                      fit: BoxFit.cover,
+                                      height: 200,
+                                    ),
+                                  )),
                               title: Text(
                                 'PROF. DR. MOHAMMAD JAMAL ABU NASSER',
                                 style: TextStyle(fontWeight: FontWeight.bold),
                               ),
-                              subtitle: Text(
-                                  'MBBS, FCPS (Surgery), FMAS (India)\nTrained in Laser Proctology (India)\nTGeneral, Laparoscopic, Breast, Hernia,\nAno-Rectal & Laser Proctology Surgeon\nSenior Consultant'),
+                              subtitle: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                      'MBBS, FCPS (Surgery), FMAS (India)\nTrained in Laser Proctology (India)\nTGeneral, Laparoscopic, Breast, Hernia,\nAno-Rectal & Laser Proctology Surgeon\nSenior Consultant'),
+                                  Container(
+                                    width: 260,
+                                    child: ElevatedButton(
+                                      onPressed: () {},
+                                      child: Text(
+                                        'Appointment',
+                                        textAlign: TextAlign.end,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                         ),
@@ -49,18 +69,38 @@ class _GeneralSurgeryState extends State<GeneralSurgery> {
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: ListTile(
-                              leading: Image.asset(
-                                'assets/images/dr/drniaz.png',
-                                fit: BoxFit.fill,
-                                height: 100,
-                                width: 55,
-                              ),
+                              leading: CircleAvatar(
+                                  radius: (30),
+                                  backgroundColor: Colors.white,
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(50),
+                                    child: Image.asset(
+                                      "assets/images/dr/drniaz.png",
+                                      fit: BoxFit.fill,
+                                      // width: 90,
+                                    ),
+                                  )),
                               title: Text(
                                 'DR. NIAZUR RAHMAN',
                                 style: TextStyle(fontWeight: FontWeight.bold),
                               ),
-                              subtitle: Text(
-                                  'MBBS, BCS, FCPS (Surgery), MS (Urology), BSMMU\nSpecialist Surgeon & Urologist\nShaheed Suhrawardy Medical College Hospital\nConsultant (Surgery & Urology)'),
+                              subtitle: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                      'MBBS, BCS, FCPS (Surgery), MS (Urology), BSMMU\nSpecialist Surgeon & Urologist\nShaheed Suhrawardy Medical College Hospital\nConsultant (Surgery & Urology)'),
+                                  Container(
+                                    width: 260,
+                                    child: ElevatedButton(
+                                      onPressed: () {},
+                                      child: Text(
+                                        'Appointment',
+                                        textAlign: TextAlign.end,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                         ),

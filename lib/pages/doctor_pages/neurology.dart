@@ -23,18 +23,38 @@ class Neurology extends StatelessWidget {
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: ListTile(
-                              leading: Image.asset(
-                                'assets/images/dr/drehsan.png',
-                                fit: BoxFit.contain,
-                                height: 100,
-                                width: 55,
-                              ),
+                              leading: CircleAvatar(
+                                  radius: (30),
+                                  backgroundColor: Colors.white,
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(50),
+                                    child: Image.asset(
+                                      "assets/images/dr/drehsan.png",
+                                      fit: BoxFit.cover,
+                                      height: 200,
+                                    ),
+                                  )),
                               title: Text(
                                 'PROFESSOR. DR. EHSAN MAHMOOD',
                                 style: TextStyle(fontWeight: FontWeight.bold),
                               ),
-                              subtitle: Text(
-                                  'MBBS, PHD(Neuro Surgery)\nBrain,Nerve & Spine Surgon\nFormer Prof. & Head of Department\nFelo,International College of Surgon(DMC)'),
+                              subtitle: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                      'MBBS, PHD(Neuro Surgery)\nBrain,Nerve & Spine Surgon\nFormer Prof. & Head of Department\nFelo,International College of Surgon(DMC)'),
+                                  Container(
+                                    width: 260,
+                                    child: ElevatedButton(
+                                      onPressed: () {},
+                                      child: Text(
+                                        'Appointment',
+                                        textAlign: TextAlign.end,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                         ),
