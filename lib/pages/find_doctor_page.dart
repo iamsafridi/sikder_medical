@@ -214,15 +214,20 @@ class _FindDoctorState extends State<FindDoctor> {
                         ),
                       ),
                     ),
-                    Card(
-                      // elevation: ,
-                      shape: Border(bottom: BorderSide(color: Colors.blue)),
-                      child: ListTile(
-                        title: Text(
-                          'Pediatrics',
-                          style: TextStyle(fontWeight: FontWeight.bold),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.pushNamed(context, '/pediatric');
+                      },
+                      child: Card(
+                        // elevation: ,
+                        shape: Border(bottom: BorderSide(color: Colors.blue)),
+                        child: ListTile(
+                          title: Text(
+                            'Dentist',
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          subtitle: Text('View Available Doctors'),
                         ),
-                        subtitle: Text('View Available Doctors'),
                       ),
                     ),
                     Card(
