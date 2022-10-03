@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 
-class pediatric extends StatefulWidget {
-  const pediatric({super.key});
+class Dentist extends StatefulWidget {
+  const Dentist({super.key});
 
   @override
-  State<pediatric> createState() => _pediatricState();
+  State<Dentist> createState() => _DentistState();
 }
 
-class _pediatricState extends State<pediatric> {
+class _DentistState extends State<Dentist> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Pediatric'),
+          title: Text('Dental Surgeon'),
         ),
         body: Padding(
             padding: const EdgeInsets.all(8.0),
@@ -34,20 +34,20 @@ class _pediatricState extends State<pediatric> {
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(50),
                                     child: Image.asset(
-                                      "assets/images/dr/dremam.png",
+                                      "assets/images/dr/drnazir.png",
                                       fit: BoxFit.cover,
                                       height: 200,
                                     ),
                                   )),
                               title: Text(
-                                'DR. A.K.M. IMAM UDDIN',
+                                'Dr. GMM Nagir Hossain',
                                 style: TextStyle(fontWeight: FontWeight.bold),
                               ),
                               subtitle: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                      'MBBS, DCH, RCPS (Ireland)\nSenior Consultant (Pediatrician)\nPublic Health Nutrition (DU)\nSpecialist in Newborn and Child Health\nFormer Resident Physician, Ministry of Health, Saudi Arabia\nConsultant (Child Specialist)'),
+                                      'BDS (DU)\nMPH (NSU)\nSenior Consultant (Dental Surgeon)'),
                                   Container(
                                     width: 260,
                                     child: ElevatedButton(
@@ -81,14 +81,55 @@ class _pediatricState extends State<pediatric> {
                                     // ),
                                   )),
                               title: Text(
-                                'DR. MAHFUZA AKTER URME',
+                                'DR. SANJIDA FARABI',
                                 style: TextStyle(fontWeight: FontWeight.bold),
                               ),
                               subtitle: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                      'MBBS (DMC), BCS (Health)\nChild Specialist(DCH) Gyne & OBS(PGT)\nBSSMU\nConsultant (Mother & Child Specialist)'),
+                                      'BDS, PGT (Oral and Maxillofacial Surgery)\nPGT (Conservative Surgery and Andodtrics)\nDental Consultant'),
+                                  Container(
+                                    width: 260,
+                                    child: ElevatedButton(
+                                      onPressed: () {},
+                                      child: Text(
+                                        'Appointment',
+                                        textAlign: TextAlign.end,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
+                        Card(
+                          // elevation: ,
+                          shape: Border(bottom: BorderSide(color: Colors.blue)),
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: ListTile(
+                              leading: CircleAvatar(
+                                  radius: (30),
+                                  backgroundColor: Colors.white,
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(50),
+                                    // child: Image.asset(
+                                    //   "assets/images/dr/drtoma.png",
+                                    //   fit: BoxFit.cover,
+                                    //   height: 200,
+                                    // ),
+                                  )),
+                              title: Text(
+                                'DR. MST. ILHAM MONIRA',
+                                style: TextStyle(fontWeight: FontWeight.bold),
+                              ),
+                              subtitle: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                      'BDS, BCS, MCPS, FCPS\n(AMFS) Dental Surgeon\nDepartment of Oral and Maxillofacial Surgery\nDhaka Dental College Hospital'),
                                   Container(
                                     width: 260,
                                     child: ElevatedButton(

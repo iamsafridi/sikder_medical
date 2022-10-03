@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:medical/pages/doctor_pages/burn.dart';
 import 'package:medical/pages/doctor_pages/cardiology.dart';
 import 'package:medical/pages/doctor_pages/cardiology_surgon.dart';
+import 'package:medical/pages/doctor_pages/dentist.dart';
 import 'package:medical/pages/doctor_pages/gynecology.dart';
 import 'package:medical/pages/doctor_pages/hematology.dart';
 import 'package:medical/pages/doctor_pages/medicine.dart';
@@ -73,6 +74,7 @@ class MyApp extends StatelessWidget {
           "/skin": (context) => Skin(),
           "/nephrology": (context) => Nephrology(),
           "/pediatric": (context) => pediatric(),
+          "/dentist": (context) => Dentist(),
         },
       );
     });

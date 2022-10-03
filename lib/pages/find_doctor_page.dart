@@ -216,14 +216,14 @@ class _FindDoctorState extends State<FindDoctor> {
                     ),
                     GestureDetector(
                       onTap: () {
-                        Navigator.pushNamed(context, '/pediatric');
+                        Navigator.pushNamed(context, '/dentist');
                       },
                       child: Card(
                         // elevation: ,
                         shape: Border(bottom: BorderSide(color: Colors.blue)),
                         child: ListTile(
                           title: Text(
-                            'Dentist',
+                            'Dental',
                             style: TextStyle(fontWeight: FontWeight.bold),
                           ),
                           subtitle: Text('View Available Doctors'),
