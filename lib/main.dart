@@ -5,6 +5,7 @@ import 'package:medical/pages/doctor_pages/cardiology_surgon.dart';
 import 'package:medical/pages/doctor_pages/gynecology.dart';
 import 'package:medical/pages/doctor_pages/hematology.dart';
 import 'package:medical/pages/doctor_pages/medicine.dart';
+import 'package:medical/pages/doctor_pages/skin.dart';
 import 'package:medical/pages/doctor_pages/urology.dart';
 import 'package:medical/pages/doctor_pages/general_surgery.dart';
 import 'package:medical/pages/doctor_pages/neurology.dart';
@@ -67,6 +68,7 @@ class MyApp extends StatelessWidget {
           "/hematology": (context) => Hematology(),
           "/gynecology": (context) => Gynecology(),
           "/burn": (context) => Burn(),
+          "/skin": (context) => Skin(),
         },
       );
     });
