@@ -12,7 +12,7 @@ class _GynecologyState extends State<Gynecology> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Cardiothoracic & Vascular Surgery'),
+          title: Text('Gynecology'),
         ),
         body: Padding(
             padding: const EdgeInsets.all(8.0),
