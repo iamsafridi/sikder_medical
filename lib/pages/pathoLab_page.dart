@@ -81,40 +81,6 @@ class PathoLab extends StatelessWidget {
                           color: Colors.blue[900],
                         ),
                         Text(
-                          'Dermatology',
-                          style: TextStyle(
-                            fontSize: 15,
-                          ),
-                        )
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 18, top: 20),
-                    child: Row(
-                      children: [
-                        Icon(
-                          Icons.check_circle,
-                          color: Colors.blue[900],
-                        ),
-                        Text(
-                          'ECG / ECHO',
-                          style: TextStyle(
-                            fontSize: 15,
-                          ),
-                        )
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 18, top: 20),
-                    child: Row(
-                      children: [
-                        Icon(
-                          Icons.check_circle,
-                          color: Colors.blue[900],
-                        ),
-                        Text(
                           'Hematology',
                           style: TextStyle(
                             fontSize: 15,

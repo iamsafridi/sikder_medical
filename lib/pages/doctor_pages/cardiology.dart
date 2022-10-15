@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:medical/pages/appointment_pages/drMahboob.dart';
 
 class Cardiology extends StatefulWidget {
   const Cardiology({super.key});
@@ -54,7 +55,10 @@ class _CardiologyState extends State<Cardiology> {
                                     Container(
                                       width: 260,
                                       child: ElevatedButton(
-                                        onPressed: () {},
+                                        onPressed: () {
+                                          Navigator.pushNamed(
+                                              context, "/mahboob");
+                                        },
                                         child: Text(
                                           'Appointment',
                                           textAlign: TextAlign.end,

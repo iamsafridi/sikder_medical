@@ -1,18 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Dentist extends StatefulWidget {
-  const Dentist({super.key});
+class Anesthesia extends StatelessWidget {
+  const Anesthesia({super.key});
 
-  @override
-  State<Dentist> createState() => _DentistState();
-}
-
-class _DentistState extends State<Dentist> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Dental Surgeon'),
+          title: Text('Anesthesia'),
         ),
         body: Padding(
             padding: const EdgeInsets.all(8.0),
@@ -33,21 +28,21 @@ class _DentistState extends State<Dentist> {
                                   backgroundColor: Colors.white,
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(50),
-                                    child: Image.asset(
-                                      "assets/images/dr/drnazir.png",
-                                      fit: BoxFit.cover,
-                                      height: 200,
-                                    ),
+                                    // child: Image.asset(
+                                    //   "assets/images/dr/dremam.png",
+                                    //   fit: BoxFit.cover,
+                                    //   height: 200,
+                                    // ),
                                   )),
                               title: Text(
-                                'Dr. GMM Nagir Hossain',
+                                'DR. S.M.A BABAR TALUKDER ',
                                 style: TextStyle(fontWeight: FontWeight.bold),
                               ),
                               subtitle: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                      'BDS (DU)\nMPH (NSU)\nSenior Consultant (Dental Surgeon)'),
+                                      'MBBS, FCPS, DA, CCD\nSenior Consultant\nCardiac Head Anesthesia & ICU\nChief of Cardiac Anesthesia & Intensive Care'),
                                   Container(
                                     width: 260,
                                     child: ElevatedButton(
@@ -81,14 +76,14 @@ class _DentistState extends State<Dentist> {
                                     // ),
                                   )),
                               title: Text(
-                                'DR. SANJIDA FARABI',
+                                'DR. ASHFAK IBN MIJAN',
                                 style: TextStyle(fontWeight: FontWeight.bold),
                               ),
                               subtitle: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                      'BDS, PGT (Oral and Maxillofacial Surgery)\nPGT (Conservative Surgery and Andodtrics)\nDental Consultant'),
+                                      'MBBS, Diploma in Anesthesiology\nResident Consultant (Anesthesia & ICU'),
                                   Container(
                                     width: 260,
                                     child: ElevatedButton(
@@ -122,14 +117,14 @@ class _DentistState extends State<Dentist> {
                                     // ),
                                   )),
                               title: Text(
-                                'DR. MST. ILHAM MONIRA',
+                                'DR. MD. MOSADDEK AKBER',
                                 style: TextStyle(fontWeight: FontWeight.bold),
                               ),
                               subtitle: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                      'BDS, BCS, MCPS, FCPS\n(AMFS) Dental Surgeon\nDepartment of Oral and Maxillofacial Surgery\nDhaka Dental College Hospital'),
+                                      'MBBS, Diploma in Anesthesiology\nResident Consultant (Anesthesia & ICU'),
                                   Container(
                                     width: 260,
                                     child: ElevatedButton(

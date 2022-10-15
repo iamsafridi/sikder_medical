@@ -216,7 +216,7 @@ class _FindDoctorState extends State<FindDoctor> {
                     ),
                     GestureDetector(
                       onTap: () {
-                        Navigator.pushNamed(context, '/dentist');
+                        Navigator.pushNamed(context, '/dental');
                       },
                       child: Card(
                         // elevation: ,
@@ -230,15 +230,20 @@ class _FindDoctorState extends State<FindDoctor> {
                         ),
                       ),
                     ),
-                    Card(
-                      // elevation: ,
-                      shape: Border(bottom: BorderSide(color: Colors.blue)),
-                      child: ListTile(
-                        title: Text(
-                          'Anesthesia',
-                          style: TextStyle(fontWeight: FontWeight.bold),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.pushNamed(context, '/anesthesia');
+                      },
+                      child: Card(
+                        // elevation: ,
+                        shape: Border(bottom: BorderSide(color: Colors.blue)),
+                        child: ListTile(
+                          title: Text(
+                            'Anesthesia',
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          subtitle: Text('View Available Doctors'),
                         ),
-                        subtitle: Text('View Available Doctors'),
                       ),
                     ),
                     Card(
