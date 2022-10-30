@@ -10,15 +10,15 @@ import 'package:http/http.dart' as http;
 
 enum TimeEnum { nine, ten, eleven, twelve, one, two, three, four, five }
 
-class DrMahboob extends StatefulWidget {
-  const DrMahboob({super.key});
+class DrAman extends StatefulWidget {
+  const DrAman({super.key});
 
   @override
-  State<DrMahboob> createState() => _DrMahboobState();
+  State<DrAman> createState() => _DrAmanState();
 }
 
-class _DrMahboobState extends State<DrMahboob> {
-  _DrMahboobState() {
+class _DrAmanState extends State<DrAman> {
+  _DrAmanState() {
     _seletedTime = _time[0];
     _seletedGender = _gender[0];
     _seletedBlood = _blood[0];
@@ -28,19 +28,17 @@ class _DrMahboobState extends State<DrMahboob> {
   TextEditingController _name = TextEditingController();
   TextEditingController _number = TextEditingController();
   TextEditingController _drname =
-      TextEditingController(text: 'PROFESSOR DR.MAHBOOB ALI');
+      TextEditingController(text: 'DR.AMANULLAH BIN SIDDIQ');
 
   final _time = [
     "",
-    "09:30 AM",
-    "10:00 AM",
-    "11:00 AM",
-    "12:00 PM",
-    "01:00 PM",
-    "02:00 PM",
-    "03:00 PM",
-    "04:00 PM",
-    "05:00 PM"
+    "3:00 PM",
+    "3:30 PM",
+    "4:00 PM",
+    "4:30 PM",
+    "5:00 PM",
+    "5:30 PM",
+    "6:00 PM"
   ];
   final _gender = ["", "Male", "Female", "Other"];
   final _blood = ["", "A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"];
@@ -81,7 +79,7 @@ class _DrMahboobState extends State<DrMahboob> {
                                       child: ClipRRect(
                                         borderRadius: BorderRadius.circular(50),
                                         child: Image.asset(
-                                          "assets/images/dr/drmahboob.png",
+                                          "assets/images/dr/draman.png",
                                           fit: BoxFit.cover,
                                           // width: 90,
                                         ),
@@ -99,7 +97,7 @@ class _DrMahboobState extends State<DrMahboob> {
                                         CrossAxisAlignment.start,
                                     children: [
                                       Text(
-                                          'MBBS, MD\nFCPS, FSCAI\nTrends in Interventional Cardiology\nSenior Consultant (Cardiology Specialist)'),
+                                          'MBBS (DMC), MD (Cardiology)\nClinical and Interventional Cardiologist\nHead of Department (Cardiology)\nNational Institute of Neurosciences & Hospital'),
                                     ],
                                   ),
                                 ),
@@ -126,7 +124,7 @@ class _DrMahboobState extends State<DrMahboob> {
                                               prefixIcon: Icon(
                                                   Icons.calendar_today_rounded),
                                               labelText:
-                                                  'Select Date (Sun, Mon, Thu)'),
+                                                  'Select Date (Sat, Mon, Wed)'),
                                           onTap: () async {
                                             DateTime? pickdate =
                                                 await showDatePicker(

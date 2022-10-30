@@ -103,7 +103,9 @@ class _CardiologyState extends State<Cardiology> {
                                     Container(
                                       width: 260,
                                       child: ElevatedButton(
-                                        onPressed: () {},
+                                        onPressed: () {
+                                          Navigator.pushNamed(context, "/aman");
+                                        },
                                         child: Text(
                                           'Appointment',
                                           textAlign: TextAlign.end,

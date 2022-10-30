@@ -63,12 +63,11 @@ class _HomePageState extends State<HomePage> {
                     children: [
                       IconButton(
                         onPressed: () {},
-                        icon:
-                            Image.asset('assets/images/online_appointment.png'),
+                        icon: Image.asset('assets/images/gift.png'),
                         iconSize: 45,
                       ),
                       Text(
-                        "Online Appointment",
+                        "Offers",
                         style: TextStyle(fontSize: 12),
                       ),
                     ],
@@ -77,13 +76,13 @@ class _HomePageState extends State<HomePage> {
                     children: [
                       IconButton(
                         onPressed: () {
-                          Navigator.pushNamed(context, '/service');
+                          Navigator.pushNamed(context, '/package');
                         },
-                        icon: Image.asset('assets/images/healthcare.png'),
+                        icon: Image.asset('assets/images/package.png'),
                         iconSize: 45,
                       ),
                       Text(
-                        "Our Services",
+                        "health Package",
                         style: TextStyle(fontSize: 12),
                       ),
                     ],
@@ -122,13 +121,13 @@ class _HomePageState extends State<HomePage> {
                     children: [
                       IconButton(
                         onPressed: () {
-                          Navigator.pushNamed(context, '/package');
+                          Navigator.pushNamed(context, '/service');
                         },
-                        icon: Image.asset('assets/images/package.png'),
+                        icon: Image.asset('assets/images/healthcare.png'),
                         iconSize: 45,
                       ),
                       Text(
-                        "health Package",
+                        "Our Services",
                         style: TextStyle(fontSize: 12),
                       ),
                     ],

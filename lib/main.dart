@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:medical/pages/appointment_pages/drAman.dart';
 import 'package:medical/pages/appointment_pages/drMahboob.dart';
 import 'package:medical/pages/doctor_pages/anesthesia.dart';
 import 'package:medical/pages/doctor_pages/burn.dart';
@@ -79,7 +80,8 @@ class MyApp extends StatelessWidget {
           "/dental": (context) => Dental(),
           "/anesthesia": (context) => Anesthesia(),
           // appointment pages route
-          "/mahboob": (context) => DrMahboob()
+          "/mahboob": (context) => DrMahboob(),
+          "/aman": (context) => DrAman(),
         },
       );
     });
