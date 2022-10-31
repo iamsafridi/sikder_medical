@@ -1,6 +1,33 @@
 import 'package:flutter/material.dart';
+import 'package:medical/pages/appointment_pages/drAiyub.dart';
 import 'package:medical/pages/appointment_pages/drAman.dart';
+import 'package:medical/pages/appointment_pages/drAminul.dart';
+import 'package:medical/pages/appointment_pages/drAnayet.dart';
+import 'package:medical/pages/appointment_pages/drAnjona.dart';
+import 'package:medical/pages/appointment_pages/drBari.dart';
+import 'package:medical/pages/appointment_pages/drEhsan.dart';
+import 'package:medical/pages/appointment_pages/drEmam.dart';
+import 'package:medical/pages/appointment_pages/drFarabi.dart';
+import 'package:medical/pages/appointment_pages/drGazi.dart';
+import 'package:medical/pages/appointment_pages/drIffat.dart';
+import 'package:medical/pages/appointment_pages/drKisor.dart';
 import 'package:medical/pages/appointment_pages/drMahboob.dart';
+import 'package:medical/pages/appointment_pages/drMahi.dart';
+import 'package:medical/pages/appointment_pages/drMasud.dart';
+import 'package:medical/pages/appointment_pages/drMitu.dart';
+import 'package:medical/pages/appointment_pages/drMonira.dart';
+import 'package:medical/pages/appointment_pages/drMorshed.dart';
+import 'package:medical/pages/appointment_pages/drNaser.dart';
+import 'package:medical/pages/appointment_pages/drNazir.dart';
+import 'package:medical/pages/appointment_pages/drNiyaz.dart';
+import 'package:medical/pages/appointment_pages/drNoor.dart';
+import 'package:medical/pages/appointment_pages/drReza.dart';
+import 'package:medical/pages/appointment_pages/drSabina.dart';
+import 'package:medical/pages/appointment_pages/drSultana.dart';
+import 'package:medical/pages/appointment_pages/drTamanna.dart';
+import 'package:medical/pages/appointment_pages/drTarek.dart';
+import 'package:medical/pages/appointment_pages/drToma.dart';
+import 'package:medical/pages/appointment_pages/drUrme.dart';
 import 'package:medical/pages/doctor_pages/anesthesia.dart';
 import 'package:medical/pages/doctor_pages/burn.dart';
 import 'package:medical/pages/doctor_pages/cardiology.dart';
@@ -82,6 +109,33 @@ class MyApp extends StatelessWidget {
           // appointment pages route
           "/mahboob": (context) => DrMahboob(),
           "/aman": (context) => DrAman(),
+          "/enayet": (context) => DrEnayet(),
+          "/reza": (context) => DrReza(),
+          "/tarek": (context) => DrTarek(),
+          "/noor": (context) => DrNoor(),
+          "/morshed": (context) => DrMorshed(),
+          "/naser": (context) => DrNaser(),
+          "/niyaz": (context) => DrNiyaz(),
+          "/ehsan": (context) => DrEhsan(),
+          "/masud": (context) => DrMasud(),
+          "/bari": (context) => DrBari(),
+          "/mahi": (context) => DrMahi(),
+          "/gazi": (context) => DrGazi(),
+          "/mitu": (context) => DrMitu(),
+          "/sabina": (context) => DrSabina(),
+          "/iffat": (context) => DrIffat(),
+          "/sultana": (context) => DrSultana(),
+          "/kisor": (context) => DrKisor(),
+          "/aiyub": (context) => DrAiyub(),
+          "/tamanna": (context) => DrTamanna(),
+          "/anjona": (context) => DrAnjona(),
+          "/toma": (context) => DrToma(),
+          "/aminul": (context) => DrAminul(),
+          "/emam": (context) => DrEmam(),
+          "/urme": (context) => DrUrme(),
+          "/nazir": (context) => DrNazir(),
+          "/farabi": (context) => DrFarabi(),
+          "/monira": (context) => DrMonira(),
         },
       );
     });

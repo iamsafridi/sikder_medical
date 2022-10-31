@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class CardiologySurgon extends StatefulWidget {
   const CardiologySurgon({super.key});
@@ -54,7 +55,9 @@ class _CardiologySurgonState extends State<CardiologySurgon> {
                                     Container(
                                       width: 260,
                                       child: ElevatedButton(
-                                        onPressed: () {},
+                                        onPressed: () {
+                                          launch('tel:01313752222');
+                                        },
                                         child: Text(
                                           'Appointment',
                                           textAlign: TextAlign.end,
@@ -99,7 +102,9 @@ class _CardiologySurgonState extends State<CardiologySurgon> {
                                     Container(
                                       width: 260,
                                       child: ElevatedButton(
-                                        onPressed: () {},
+                                        onPressed: () {
+                                          launch('tel:01313752222');
+                                        },
                                         child: Text(
                                           'Appointment',
                                           textAlign: TextAlign.end,
@@ -165,7 +170,9 @@ class _CardiologySurgonState extends State<CardiologySurgon> {
                                     Container(
                                       width: 260,
                                       child: ElevatedButton(
-                                        onPressed: () {},
+                                        onPressed: () {
+                                          Navigator.pushNamed(context, "/reza");
+                                        },
                                         child: Text(
                                           'Appointment',
                                           textAlign: TextAlign.end,
@@ -210,7 +217,10 @@ class _CardiologySurgonState extends State<CardiologySurgon> {
                                     Container(
                                       width: 260,
                                       child: ElevatedButton(
-                                        onPressed: () {},
+                                        onPressed: () {
+                                          Navigator.pushNamed(
+                                              context, "/tarek");
+                                        },
                                         child: Text(
                                           'Appointment',
                                           textAlign: TextAlign.end,
@@ -255,7 +265,9 @@ class _CardiologySurgonState extends State<CardiologySurgon> {
                                     Container(
                                       width: 260,
                                       child: ElevatedButton(
-                                        onPressed: () {},
+                                        onPressed: () {
+                                          Navigator.pushNamed(context, "/noor");
+                                        },
                                         child: Text(
                                           'Appointment',
                                           textAlign: TextAlign.end,
@@ -300,7 +312,10 @@ class _CardiologySurgonState extends State<CardiologySurgon> {
                                     Container(
                                       width: 260,
                                       child: ElevatedButton(
-                                        onPressed: () {},
+                                        onPressed: () {
+                                          Navigator.pushNamed(
+                                              context, "/morshed");
+                                        },
                                         child: Text(
                                           'Appointment',
                                           textAlign: TextAlign.end,

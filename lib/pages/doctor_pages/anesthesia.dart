@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Anesthesia extends StatelessWidget {
   const Anesthesia({super.key});
@@ -46,7 +47,9 @@ class Anesthesia extends StatelessWidget {
                                   Container(
                                     width: 260,
                                     child: ElevatedButton(
-                                      onPressed: () {},
+                                      onPressed: () {
+                                        launch('tel:01313752222');
+                                      },
                                       child: Text(
                                         'Appointment',
                                         textAlign: TextAlign.end,
@@ -87,7 +90,9 @@ class Anesthesia extends StatelessWidget {
                                   Container(
                                     width: 260,
                                     child: ElevatedButton(
-                                      onPressed: () {},
+                                      onPressed: () {
+                                        launch('tel:01313752222');
+                                      },
                                       child: Text(
                                         'Appointment',
                                         textAlign: TextAlign.end,
@@ -128,7 +133,9 @@ class Anesthesia extends StatelessWidget {
                                   Container(
                                     width: 260,
                                     child: ElevatedButton(
-                                      onPressed: () {},
+                                      onPressed: () {
+                                        launch('tel:01313752222');
+                                      },
                                       child: Text(
                                         'Appointment',
                                         textAlign: TextAlign.end,

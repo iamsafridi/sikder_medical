@@ -42,9 +42,10 @@ dependencies:
   google_fonts: ^3.0.1
   intl: ^0.17.0
   form_field_validator: ^1.1.0
-  sqflite: ^2.1.0+1
   path:
   http: ^0.13.5
+  intl_phone_number_input: ^0.7.1
+  intl_phone_field: ^3.0.0
 
 dev_dependencies:
   flutter_test:

@@ -51,7 +51,9 @@ class _pediatricState extends State<pediatric> {
                                   Container(
                                     width: 260,
                                     child: ElevatedButton(
-                                      onPressed: () {},
+                                      onPressed: () {
+                                        Navigator.pushNamed(context, "/emam");
+                                      },
                                       child: Text(
                                         'Appointment',
                                         textAlign: TextAlign.end,
@@ -92,7 +94,9 @@ class _pediatricState extends State<pediatric> {
                                   Container(
                                     width: 260,
                                     child: ElevatedButton(
-                                      onPressed: () {},
+                                      onPressed: () {
+                                        Navigator.pushNamed(context, "/urme");
+                                      },
                                       child: Text(
                                         'Appointment',
                                         textAlign: TextAlign.end,

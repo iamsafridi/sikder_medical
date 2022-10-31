@@ -46,7 +46,9 @@ class Burn extends StatelessWidget {
                                   Container(
                                     width: 260,
                                     child: ElevatedButton(
-                                      onPressed: () {},
+                                      onPressed: () {
+                                        Navigator.pushNamed(context, "/kisor");
+                                      },
                                       child: Text(
                                         'Appointment',
                                         textAlign: TextAlign.end,
@@ -87,7 +89,9 @@ class Burn extends StatelessWidget {
                                   Container(
                                     width: 260,
                                     child: ElevatedButton(
-                                      onPressed: () {},
+                                      onPressed: () {
+                                        Navigator.pushNamed(context, "/aiyub");
+                                      },
                                       child: Text(
                                         'Appointment',
                                         textAlign: TextAlign.end,
@@ -128,7 +132,10 @@ class Burn extends StatelessWidget {
                                   Container(
                                     width: 260,
                                     child: ElevatedButton(
-                                      onPressed: () {},
+                                      onPressed: () {
+                                        Navigator.pushNamed(
+                                            context, "/tamanna");
+                                      },
                                       child: Text(
                                         'Appointment',
                                         textAlign: TextAlign.end,

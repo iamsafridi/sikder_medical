@@ -4,15 +4,15 @@ import 'package:intl/intl.dart';
 import 'package:form_field_validator/form_field_validator.dart';
 import 'package:http/http.dart' as http;
 
-class DrAman extends StatefulWidget {
-  const DrAman({super.key});
+class DrAiyub extends StatefulWidget {
+  const DrAiyub({super.key});
 
   @override
-  State<DrAman> createState() => _DrAmanState();
+  State<DrAiyub> createState() => _DrAiyubState();
 }
 
-class _DrAmanState extends State<DrAman> {
-  _DrAmanState() {
+class _DrAiyubState extends State<DrAiyub> {
+  _DrAiyubState() {
     _seletedTime = _time[0];
     _seletedGender = _gender[0];
     _seletedBlood = _blood[0];
@@ -21,7 +21,7 @@ class _DrAmanState extends State<DrAman> {
   TextEditingController _date = TextEditingController();
   TextEditingController _name = TextEditingController();
   TextEditingController _drname =
-      TextEditingController(text: 'DR.AMANULLAH BIN SIDDIQ');
+      TextEditingController(text: 'DR. SM AIYUB HOSSAIN');
 
   final _time = [
     "",
@@ -31,7 +31,7 @@ class _DrAmanState extends State<DrAman> {
     "4:30 PM",
     "5:00 PM",
     "5:30 PM",
-    "6:00 PM"
+    "6:00 PM",
   ];
   final _gender = ["", "Male", "Female", "Other"];
   final _blood = ["", "A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"];
@@ -73,7 +73,7 @@ class _DrAmanState extends State<DrAman> {
                                       child: ClipRRect(
                                         borderRadius: BorderRadius.circular(50),
                                         child: Image.asset(
-                                          "assets/images/dr/draman.png",
+                                          "assets/images/dr/draiyub.png",
                                           fit: BoxFit.cover,
                                           // width: 90,
                                         ),
@@ -91,7 +91,7 @@ class _DrAmanState extends State<DrAman> {
                                         CrossAxisAlignment.start,
                                     children: [
                                       Text(
-                                          'MBBS (DMC), MD (Cardiology)\nClinical and Interventional Cardiologist\nHead of Department (Cardiology)\nNational Institute of Neurosciences & Hospital'),
+                                          'MBBS,(DU), BCS (Health)\nMS (Plastic and Reconstructive Surgery)\nSpecialists in Burn, Plastic, Reconstructive, and Hand Surgery\nResident Surgeon\nSheikh Hasina National Institute of Burn and Plastic Surgery\nConsultant (Burn and Plastic Surgery)'),
                                     ],
                                   ),
                                 ),
@@ -118,7 +118,7 @@ class _DrAmanState extends State<DrAman> {
                                               prefixIcon: Icon(
                                                   Icons.calendar_today_rounded),
                                               labelText:
-                                                  'Select Date (Sun, Mon, Thu)'),
+                                                  'Select Date (Sun, Tue & Thu)'),
                                           onTap: () async {
                                             DateTime? pickdate =
                                                 await showDatePicker(
@@ -349,6 +349,7 @@ class _DrAmanState extends State<DrAman> {
 
   Future Appointment() async {
     var APIURL = 'http://202.84.39.89:8888/appointment/appointment.php';
+    // http://202.84.39.89:8888/getappointment/
 
     Map mapeddata = {
       "drname": _drname.text,

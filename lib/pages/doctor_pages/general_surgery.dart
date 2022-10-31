@@ -51,7 +51,9 @@ class _GeneralSurgeryState extends State<GeneralSurgery> {
                                   Container(
                                     width: 260,
                                     child: ElevatedButton(
-                                      onPressed: () {},
+                                      onPressed: () {
+                                        Navigator.pushNamed(context, "/naser");
+                                      },
                                       child: Text(
                                         'Appointment',
                                         textAlign: TextAlign.end,
@@ -92,7 +94,9 @@ class _GeneralSurgeryState extends State<GeneralSurgery> {
                                   Container(
                                     width: 260,
                                     child: ElevatedButton(
-                                      onPressed: () {},
+                                      onPressed: () {
+                                        Navigator.pushNamed(context, "/niyaz");
+                                      },
                                       child: Text(
                                         'Appointment',
                                         textAlign: TextAlign.end,

@@ -51,7 +51,9 @@ class _DentalState extends State<Dental> {
                                   Container(
                                     width: 260,
                                     child: ElevatedButton(
-                                      onPressed: () {},
+                                      onPressed: () {
+                                        Navigator.pushNamed(context, "/nazir");
+                                      },
                                       child: Text(
                                         'Appointment',
                                         textAlign: TextAlign.end,
@@ -92,7 +94,9 @@ class _DentalState extends State<Dental> {
                                   Container(
                                     width: 260,
                                     child: ElevatedButton(
-                                      onPressed: () {},
+                                      onPressed: () {
+                                        Navigator.pushNamed(context, "/farabi");
+                                      },
                                       child: Text(
                                         'Appointment',
                                         textAlign: TextAlign.end,
@@ -133,7 +137,9 @@ class _DentalState extends State<Dental> {
                                   Container(
                                     width: 260,
                                     child: ElevatedButton(
-                                      onPressed: () {},
+                                      onPressed: () {
+                                        Navigator.pushNamed(context, "/monira");
+                                      },
                                       child: Text(
                                         'Appointment',
                                         textAlign: TextAlign.end,

@@ -46,7 +46,9 @@ class Neurology extends StatelessWidget {
                                   Container(
                                     width: 260,
                                     child: ElevatedButton(
-                                      onPressed: () {},
+                                      onPressed: () {
+                                        Navigator.pushNamed(context, "/ehsan");
+                                      },
                                       child: Text(
                                         'Appointment',
                                         textAlign: TextAlign.end,

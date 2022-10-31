@@ -51,7 +51,9 @@ class _HematologyState extends State<Hematology> {
                                   Container(
                                     width: 260,
                                     child: ElevatedButton(
-                                      onPressed: () {},
+                                      onPressed: () {
+                                        Navigator.pushNamed(context, "/gazi");
+                                      },
                                       child: Text(
                                         'Appointment',
                                         textAlign: TextAlign.end,

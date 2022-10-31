@@ -46,7 +46,9 @@ class Urology extends StatelessWidget {
                                   Container(
                                     width: 260,
                                     child: ElevatedButton(
-                                      onPressed: () {},
+                                      onPressed: () {
+                                        Navigator.pushNamed(context, "/masud");
+                                      },
                                       child: Text(
                                         'Appointment',
                                         textAlign: TextAlign.end,

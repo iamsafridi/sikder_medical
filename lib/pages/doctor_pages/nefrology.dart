@@ -51,7 +51,9 @@ class _NephrologyState extends State<Nephrology> {
                                   Container(
                                     width: 260,
                                     child: ElevatedButton(
-                                      onPressed: () {},
+                                      onPressed: () {
+                                        Navigator.pushNamed(context, "/aminul");
+                                      },
                                       child: Text(
                                         'Appointment',
                                         textAlign: TextAlign.end,

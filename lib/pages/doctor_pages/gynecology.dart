@@ -54,7 +54,9 @@ class _GynecologyState extends State<Gynecology> {
                                     Container(
                                       width: 260,
                                       child: ElevatedButton(
-                                        onPressed: () {},
+                                        onPressed: () {
+                                          Navigator.pushNamed(context, "/mitu");
+                                        },
                                         child: Text(
                                           'Appointment',
                                           textAlign: TextAlign.end,
@@ -99,7 +101,10 @@ class _GynecologyState extends State<Gynecology> {
                                     Container(
                                       width: 260,
                                       child: ElevatedButton(
-                                        onPressed: () {},
+                                        onPressed: () {
+                                          Navigator.pushNamed(
+                                              context, "/sabina");
+                                        },
                                         child: Text(
                                           'Appointment',
                                           textAlign: TextAlign.end,
@@ -144,7 +149,10 @@ class _GynecologyState extends State<Gynecology> {
                                     Container(
                                       width: 260,
                                       child: ElevatedButton(
-                                        onPressed: () {},
+                                        onPressed: () {
+                                          Navigator.pushNamed(
+                                              context, "/iffat");
+                                        },
                                         child: Text(
                                           'Appointment',
                                           textAlign: TextAlign.end,
@@ -189,7 +197,10 @@ class _GynecologyState extends State<Gynecology> {
                                     Container(
                                       width: 260,
                                       child: ElevatedButton(
-                                        onPressed: () {},
+                                        onPressed: () {
+                                          Navigator.pushNamed(
+                                              context, "/sultana");
+                                        },
                                         child: Text(
                                           'Appointment',
                                           textAlign: TextAlign.end,

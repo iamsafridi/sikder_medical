@@ -1,14 +1,8 @@
-import 'dart:convert';
-
+import 'package:intl_phone_field/intl_phone_field.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:medical/pages/appointment_pages/drMahboob.dart';
 import 'package:form_field_validator/form_field_validator.dart';
-import 'package:path/path.dart';
-import 'package:sqflite/sqflite.dart';
 import 'package:http/http.dart' as http;
-
-enum TimeEnum { nine, ten, eleven, twelve, one, two, three, four, five }
 
 class DrMahboob extends StatefulWidget {
   const DrMahboob({super.key});
@@ -26,7 +20,7 @@ class _DrMahboobState extends State<DrMahboob> {
 
   TextEditingController _date = TextEditingController();
   TextEditingController _name = TextEditingController();
-  TextEditingController _number = TextEditingController();
+  // TextEditingController _number = TextEditingController();
   TextEditingController _drname =
       TextEditingController(text: 'PROFESSOR DR.MAHBOOB ALI');
 
@@ -47,7 +41,7 @@ class _DrMahboobState extends State<DrMahboob> {
   String? _seletedTime = "";
   String? _seletedGender = "";
   String? _seletedBlood = "";
-
+  String? _phone;
   final _formKey = GlobalKey<FormState>();
 
   @override
@@ -132,8 +126,8 @@ class _DrMahboobState extends State<DrMahboob> {
                                                 await showDatePicker(
                                                     context: context,
                                                     initialDate: DateTime.now(),
-                                                    firstDate: DateTime(2000),
-                                                    lastDate: DateTime(2100));
+                                                    firstDate: DateTime.now(),
+                                                    lastDate: DateTime(2101));
 
                                             if (pickdate != null) {
                                               setState(() {
@@ -226,21 +220,18 @@ class _DrMahboobState extends State<DrMahboob> {
                                       children: [
                                         Container(
                                           width: 300,
-                                          child: TextFormField(
-                                            controller: _number,
-                                            autovalidateMode: AutovalidateMode
-                                                .onUserInteraction,
-                                            keyboardType: TextInputType.phone,
+                                          child: IntlPhoneField(
+                                            initialCountryCode: 'BD',
+                                            onChanged: (phone) {
+                                              _phone = phone.completeNumber;
+                                              // print(phone.completeNumber);
+                                            },
                                             decoration: const InputDecoration(
                                                 contentPadding:
                                                     EdgeInsets.all(4),
                                                 border: OutlineInputBorder(),
                                                 prefixIcon: Icon(Icons.phone),
                                                 labelText: 'Phone Number'),
-                                            validator: MultiValidator([
-                                              RequiredValidator(
-                                                  errorText: "Required*")
-                                            ]),
                                           ),
                                         ),
                                       ],
@@ -366,7 +357,7 @@ class _DrMahboobState extends State<DrMahboob> {
       "date": _date.text,
       "time": _seletedTime,
       "name": _name.text,
-      "number": _number.text,
+      "number": _phone,
       "gender": _seletedGender,
       "blood": _seletedBlood,
     };

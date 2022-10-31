@@ -4,15 +4,15 @@ import 'package:intl/intl.dart';
 import 'package:form_field_validator/form_field_validator.dart';
 import 'package:http/http.dart' as http;
 
-class DrAman extends StatefulWidget {
-  const DrAman({super.key});
+class DrMonira extends StatefulWidget {
+  const DrMonira({super.key});
 
   @override
-  State<DrAman> createState() => _DrAmanState();
+  State<DrMonira> createState() => _DrMoniraState();
 }
 
-class _DrAmanState extends State<DrAman> {
-  _DrAmanState() {
+class _DrMoniraState extends State<DrMonira> {
+  _DrMoniraState() {
     _seletedTime = _time[0];
     _seletedGender = _gender[0];
     _seletedBlood = _blood[0];
@@ -21,17 +21,17 @@ class _DrAmanState extends State<DrAman> {
   TextEditingController _date = TextEditingController();
   TextEditingController _name = TextEditingController();
   TextEditingController _drname =
-      TextEditingController(text: 'DR.AMANULLAH BIN SIDDIQ');
+      TextEditingController(text: 'DR. MST. ILHAM MONIRA');
 
   final _time = [
     "",
-    "3:00 PM",
-    "3:30 PM",
-    "4:00 PM",
-    "4:30 PM",
-    "5:00 PM",
-    "5:30 PM",
-    "6:00 PM"
+    "03:00 PM",
+    "03:30 PM",
+    "04:00 PM",
+    "04:30 PM",
+    "05:00 PM",
+    "05:30 PM",
+    "06:00 PM",
   ];
   final _gender = ["", "Male", "Female", "Other"];
   final _blood = ["", "A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"];
@@ -67,17 +67,17 @@ class _DrAmanState extends State<DrAman> {
                               child: Padding(
                                 padding: const EdgeInsets.all(8.0),
                                 child: ListTile(
-                                  leading: CircleAvatar(
-                                      radius: (30),
-                                      backgroundColor: Colors.white,
-                                      child: ClipRRect(
-                                        borderRadius: BorderRadius.circular(50),
-                                        child: Image.asset(
-                                          "assets/images/dr/draman.png",
-                                          fit: BoxFit.cover,
-                                          // width: 90,
-                                        ),
-                                      )),
+                                  // leading: CircleAvatar(
+                                  //     radius: (30),
+                                  //     backgroundColor: Colors.white,
+                                  //     child: ClipRRect(
+                                  //       borderRadius: BorderRadius.circular(50),
+                                  //       child: Image.asset(
+                                  //         "assets/images/dr/drnazir.png",
+                                  //         fit: BoxFit.cover,
+                                  //         // width: 90,
+                                  //       ),
+                                  //     )),
                                   title: TextFormField(
                                     decoration: InputDecoration(
                                         border: InputBorder.none),
@@ -91,7 +91,7 @@ class _DrAmanState extends State<DrAman> {
                                         CrossAxisAlignment.start,
                                     children: [
                                       Text(
-                                          'MBBS (DMC), MD (Cardiology)\nClinical and Interventional Cardiologist\nHead of Department (Cardiology)\nNational Institute of Neurosciences & Hospital'),
+                                          'BDS, BCS, MCPS, FCPS\n(AMFS) Dental Surgeon\nDepartment of Oral and Maxillofacial Surgery\nDhaka Dental College Hospital'),
                                     ],
                                   ),
                                 ),
@@ -118,7 +118,7 @@ class _DrAmanState extends State<DrAman> {
                                               prefixIcon: Icon(
                                                   Icons.calendar_today_rounded),
                                               labelText:
-                                                  'Select Date (Sun, Mon, Thu)'),
+                                                  'Select Date (Sat - Thu)'),
                                           onTap: () async {
                                             DateTime? pickdate =
                                                 await showDatePicker(

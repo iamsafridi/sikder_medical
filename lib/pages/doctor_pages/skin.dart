@@ -51,7 +51,9 @@ class _SkinState extends State<Skin> {
                                   Container(
                                     width: 260,
                                     child: ElevatedButton(
-                                      onPressed: () {},
+                                      onPressed: () {
+                                        Navigator.pushNamed(context, "/anjona");
+                                      },
                                       child: Text(
                                         'Appointment',
                                         textAlign: TextAlign.end,
@@ -92,7 +94,9 @@ class _SkinState extends State<Skin> {
                                   Container(
                                     width: 260,
                                     child: ElevatedButton(
-                                      onPressed: () {},
+                                      onPressed: () {
+                                        Navigator.pushNamed(context, "/toma");
+                                      },
                                       child: Text(
                                         'Appointment',
                                         textAlign: TextAlign.end,
